@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+   <div id="header-container">
+     <div id="logo-container">
+        <h4>Node Authentication</h4>
+     </div>
+     <div id="link-container">
+      <ul>
+        <% if(locals.user){ %>
+          <li><a href="/"><%=user.name%></a></li>
+          <li>
+             <a href="/users/reset-password">Reset Password</a>
+          </li>
+          <li>
+              <a href="/users/sign-out">Sign Out</a>
+          </li>
+        <% }else{ %>
+              <li>
+                 <a href="/users/sign-in">Sign In</a>
+              </li>
+              <li>
+                <a href="/users/sign-up">Sign Up</a>
+             </li>
+            <% } %>
+
+    </ul>
+     </div>
+       
+   </div>
+    
+</header>

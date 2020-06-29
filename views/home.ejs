@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<% if(locals.user){ %>
+     <div class="home-container">
+      <h3>
+        Welcome to home page!
+      </h3> 
+      <p>
+        You are successfully logged in!!!
+      </p>
+     </div>
+  <% }else{ %>
+     <div class="home-container">
+        <h3>
+            Welcome to home page!
+        </h3>  
+        <p>
+            Sign in to continue...
+        </p>
+     </div>
+      
+  <% } %>

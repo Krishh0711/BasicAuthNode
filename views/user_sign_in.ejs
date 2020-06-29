@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/css/common.css">
+
+<div id="sign-in-container">
+   <div id="header-design">
+       <h1> Sign In </h1>
+   </div>
+   <div id="form-container">
+    <form action="/users/create-session" method="POST">
+        <input type="email" name="email" placeholder="Enter e-mail..." required>
+        <input type="password" name="password" placeholder="Enter password..." required>   
+        <input type="submit" value="Sign In" id="button-style">
+    </form>
+   </div>
+   <div id="google-button">
+     <hr>
+     <p>or</p>
+     <hr>  
+     <a href="/users/auth/google"><button type="submit"><i class="fab fa-google"></i>   Sign In with Google</button></a>
+    
+   </div>
+</div>
+
+
+

@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  body #sign-in-container {
+    width: 30%;
+    border: 1px dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 30px auto;
+    padding: 10px;
+    background-image: linear-gradient(45deg, black, grey, black);
+    color: white;
+    border-radius: 10px;
+    text-align: center; }
+    body #sign-in-container #form-container form input {
+      width: 100%;
+      height: 3rem;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1.1rem; }
+    body #sign-in-container #form-container form input:focus {
+      outline: none; }
+    body #sign-in-container #form-container form #button-style {
+      cursor: pointer; }
+    body #sign-in-container #google-button hr {
+      border: 1px dotted white; }
+    body #sign-in-container #google-button a {
+      text-decoration: none; }
+      body #sign-in-container #google-button a button {
+        font-size: 1rem;
+        width: 50%;
+        height: 2.8rem;
+        margin: 6px auto;
+        cursor: pointer; }
+        body #sign-in-container #google-button a button i {
+          color: red;
+          margin-right: 6px;
+          transform: scale(1.3); }
